@@ -85,7 +85,7 @@ This repository follows the rules every Playtron repo follows, plus those for `l
 - Do not add tests unless asked or `REVIEW.md` requires them.
 - Each package is its own repository: depend on a sibling by git URL, never by `path`, symlink or `../` link.
 - A dev deploy to a Kora host must override every `/etc/systemd/user` unit running the system build, with drop-ins naming the same store path.
-- A dev build of an agentos-accounts caller prompts on every credential read until root-owned `allowed-callers.d` names its exact exe.
+- A dev build of a kora-secrets caller prompts on every credential read until root-owned `allowed-callers.d` names its exact exe.
 
 ### `libs` packages
 
