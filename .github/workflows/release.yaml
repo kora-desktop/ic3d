@@ -27,6 +27,7 @@ jobs:
           persist-credentials: true
       - run: |
           npm install @semantic-release/exec @semantic-release/git @semantic-release/changelog @semantic-release/github
+      - uses: kora-desktop/ci-actions/retry-notes-push@v1
       - run: |
           task release
         env:
